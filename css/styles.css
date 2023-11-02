@@ -1,3 +1,11 @@
+/* CUSTOM PROPS */
+:root{
+  --white: #fff;
+  --red: #F94F4F;
+  --dull-red: #FF9393;
+  --text-black: #000000;
+  --bg-black: #191921;
+}
 /* ** GLOBAL STYLES ** */
 html
 {
@@ -21,12 +29,13 @@ body
   height: 100%;
   padding: 0;
   margin: 0;
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: Arial, sans-serif;
-  letter-spacing: 0.5px;
-  background-color: #fff;
-  color: #222;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+  font-family: "Commissioner", Arial, sans-serif;
+  letter-spacing: 0;
+  background-color: var(--white);
+  color: var(--text-black);
 }
 img
 {
