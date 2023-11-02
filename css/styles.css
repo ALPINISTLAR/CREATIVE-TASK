@@ -194,15 +194,33 @@ select:-webkit-autofill:focus {
 }
 .strategic__container {
   display: flex;
-  justify-content: flex-end;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  justify-content: space-between;
   padding-right: 105px;
+  padding-left: 0;
+}
+.strategic__img{
+  position: relative;
+  width: 735px;
   background-image: url("../img/laptop.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  margin-right: 24px;
+}
+.strategic__img::after{
+  position: absolute;
+  top: 234px;
+  right: -68px;
+  width: 135px;
+  height: 61px;
+  display: flex;
+  content: "";
+  background-image: url(../img/tilda.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .strategic__content {
+  padding-top: 200px;
+  padding-bottom: 400px;
   width: 445px;
 }
 .strategic__title {
@@ -231,4 +249,56 @@ select:-webkit-autofill:focus {
 }
 .strategic__btn:active{
   opacity: 0.6;
+}
+
+/* FEATURES */
+.features__container{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0;
+}
+.features__title {
+  width: 540px;
+  padding-top: 200px;
+  margin-right: -160px;
+  color: var(--text-black);
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 64px;
+  z-index: 50;
+}
+.features__list {
+  padding: 244px 105px 200px 344px;
+  background-color: var(--red);
+  margin-top: -200px;
+  z-index: 45;
+}
+.features__list-item:not(:last-child) {
+  margin-bottom: 56px;
+}
+.feature {
+  position: relative;
+  max-width: 445px;
+  width: 100%;
+}
+.feature__before {
+  position: absolute;
+  top: -44px;
+  left: -59px;
+  color: var(--white);
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 88px;
+  opacity: 0.25;
+}
+.feature__title {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 32px;
+  margin-bottom: 24px;
+  z-index: 5;
+}
+.feature__text {
+  color: var(--white);
 }
