@@ -87,6 +87,8 @@ select:-webkit-autofill:focus {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+  background-color: transparent;
+  border: 0;
 }
 .btn:active{
   opacity: 0.6;
@@ -301,4 +303,67 @@ select:-webkit-autofill:focus {
 }
 .feature__text {
   color: var(--white);
+}
+
+/* SLIDER  */
+.slider__container {
+  padding-left: 0;
+  padding-bottom: 200px;
+  background-image: url(../img/book.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+.slider__content {
+  position: relative;
+  max-width: 735px;
+  padding: 152px 125px 152px 165px;
+  background-color: var(--bg-black);
+}
+.slider__content::after{
+  position: absolute;
+  top: 186px;
+  right: -67px;
+  width: 134px;
+  height: 60px;
+  display: flex;
+  content: "";
+  background-image: url(../img/tilda-white.svg);
+  background-position: center center;
+
+}
+.slider__title {
+  width: 445px;
+  color: var(--white);
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 64px;
+  margin-bottom: 50px;
+}
+.slider__button-wrapper {
+  width: 96px;
+  display: flex;
+  justify-content: space-between;
+}
+.slider__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 17px;
+  border: 1px solid var(--red);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+.slider__btn-icon{
+  color: var(--red);
+}
+.slider__btn:hover{
+  border-color: var(--dull-red);
+}
+.slider__btn:hover .slider__btn-icon{
+  color: var(--dull-red);
+}
+.slider__btn:active{
+  opacity: 0.6;
 }
