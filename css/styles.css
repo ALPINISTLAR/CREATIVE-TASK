@@ -5,6 +5,7 @@
   --dull-red: #FF9393;
   --text-black: #000000;
   --bg-black: #191921;
+--bg-black-hover: #434356;
 }
 /* ** GLOBAL STYLES ** */
 html
@@ -67,7 +68,27 @@ select:-webkit-autofill:focus {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+/* BUTTON */
+.btn{
+  padding: 22px 44px;
+  color: var(--white);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.btn--black{
+  background-color: var(--bg-black);
+}
+.btn--black:hover{
+  background-color: var(--bg-black-hover);
+}
+.btn--red{
+  background-color: var(--red);
+}
+.btn--red:hover{
+  background-color: var(--dull-red);
+}
 /* *** CONTAINER *** */
 .container
 {
