@@ -89,6 +89,7 @@ select:-webkit-autofill:focus {
   line-height: normal;
   background-color: transparent;
   border: 0;
+  white-space: nowrap;
 }
 .btn:active{
   opacity: 0.6;
@@ -366,4 +367,36 @@ select:-webkit-autofill:focus {
 }
 .slider__btn:active{
   opacity: 0.6;
+}
+
+/* CTA */
+.cta {
+  padding-top: 120px;
+  padding-bottom: 115px;
+}
+.cta__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cta__title {
+  position: relative;
+  color: var(--bg-black);
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 64px;
+  margin-right: 24px;
+}
+.cta__title::before{
+  position: absolute;
+  top: 34px;
+  right: calc(100% + 98px);
+  width: 134px;
+  height: 60px;
+  display: flex;
+  content: "";
+  background-image: url(../img/tilda.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
