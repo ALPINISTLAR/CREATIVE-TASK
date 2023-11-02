@@ -168,11 +168,8 @@ select:-webkit-autofill:focus {
 /* HERO  */
 
 .hero__container {
-  background: #fff;
-  background-image: url("../img/office.jpg"); /* fallback */
-  background-image: url("../img/office.jpg"), linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%); /* W3C */
-  background-repeat: no-repeat;
-  background-position: right;
+  background: url("../img/office.jpg") center right no-repeat;
+  background-blend-mode: linear-gradient(-90deg, red 0%, rgba(255, 255, 255, 0.00) 100%);
 }
 .hero__content {
   padding-top: 112px;
