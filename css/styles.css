@@ -116,12 +116,12 @@ select:-webkit-autofill:focus {
 /* *** CONTAINER *** */
 .container
 {
-  max-width: 1440px;
+  max-width: 1536px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 165px;
-  padding-right: 165px;
+  padding-left: 213px;
+  padding-right: 213px;
 }
 /* HEADER */
 .header__container {
@@ -134,7 +134,7 @@ select:-webkit-autofill:focus {
   margin-right: 24px;
 }
 .sitenav {
-  padding: 73px 165px 73px 70px;
+  padding: 73px 213px 73px 70px;
   background-color: var(--red);
   display: flex;
   align-items: center;
@@ -152,7 +152,7 @@ select:-webkit-autofill:focus {
   font-weight: 700;
 }
 .sitenav__link:active{
-opacity: 0.6;
+  opacity: 0.6;
 }
 
 
@@ -163,8 +163,11 @@ opacity: 0.6;
 }
 
 /* HERO  */
+
 .hero__container {
-  background-image: url(../img/office.png);
+  background: #fff;
+  background-image: url("../img/office.jpg"); /* fallback */
+  background-image: url("../img/office.jpg"), linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%); /* W3C */
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -184,4 +187,48 @@ opacity: 0.6;
 .hero__text {
   max-width: 540px;
   margin-bottom: 48px;
+}
+/* STRATEGIC */
+.strategic {
+  background-color: var(--bg-black);
+}
+.strategic__container {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-right: 105px;
+  background-image: url("../img/laptop.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.strategic__content {
+  width: 445px;
+}
+.strategic__title {
+  color: var(--white);
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 64px;
+  margin-bottom: 43px;
+}
+.strategic__title span{
+  color: var(--red);
+}
+.strategic__text {
+  margin-bottom: 48px;
+  color: var(--white);
+}
+.strategic__btn {
+  color: var(--red);
+  font-weight: 800;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--red);
+}
+.strategic__btn:hover{
+  color: var(--dull-red);
+  border-color: var(--dull-red);
+}
+.strategic__btn:active{
+  opacity: 0.6;
 }
