@@ -145,6 +145,7 @@ select:-webkit-autofill:focus {
   margin-right: 50px;
 }
 .sitenav__link {
+  font-size: 16px;
   color: var(--white);
 }
 .sitenav__link:hover{
@@ -159,4 +160,28 @@ opacity: 0.6;
 .main-content
 {
   flex-grow: 1;
+}
+
+/* HERO  */
+.hero__container {
+  background-image: url(../img/office.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.hero__content {
+  padding-top: 112px;
+  padding-bottom: 160px;
+  max-width: 730px;
+}
+.hero__title {
+  color: var(--text-black);
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 88px;
+  margin-bottom: 39px;
+}
+.hero__text {
+  max-width: 540px;
+  margin-bottom: 48px;
 }
