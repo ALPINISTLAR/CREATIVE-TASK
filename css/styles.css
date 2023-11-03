@@ -107,6 +107,9 @@ select:-webkit-autofill:focus {
   background-color: var(--dull-red);
 }
 /* LOGO  */
+.logo{
+  flex-shrink: 0;
+}
 .logo:hover {
   opacity: 0.8;
 }
@@ -136,6 +139,21 @@ select:-webkit-autofill:focus {
 .header__logo {
   margin-right: 24px;
 }
+.sitenav__opener{
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  background-color: transparent;
+  color: rgb(0, 0, 0, 0.5);
+}
+.sitenav__opener:hover{
+  color: var(--red);
+}
+.sitenav:active{
+  opacity: 0.6;
+}
 .sitenav {
   padding: 73px 213px 73px 70px;
   background-color: var(--red);
@@ -157,16 +175,12 @@ select:-webkit-autofill:focus {
 .sitenav__link:active{
   opacity: 0.6;
 }
-
-
 /* ** MAIN CONTENT ** */
 .main-content
 {
   flex-grow: 1;
 }
-
 /* HERO  */
-
 .hero__container {
   background: url("../img/office.jpg") center right no-repeat;
 }
@@ -649,5 +663,34 @@ select:-webkit-autofill:focus {
   }
   .cta__title::before{
     display: none;
+  }
+}
+@media only screen and (max-width: 670px){
+  .header__container{
+    padding: 40px;
+  }
+  .sitenav__opener{
+    display: flex;
+  }
+  .sitenav{
+    display: none;
+  }
+  .strategic__img::after{
+    display: none;
+  }
+  .features__list{
+    padding: 100px 40px;
+  }
+  .feature{
+    min-width: 240px;
+    width: 100%;
+  }
+  .cta__container{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cta__title{
+    margin-right: 0;
+    margin-bottom: 47px;
   }
 }
